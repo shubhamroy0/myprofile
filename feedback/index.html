@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css" rel="stylesheet"/>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+<link rel="stylesheet" href="css/basic_style.css"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>	
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="js/feedback_script.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+</head>
+<body>
+<header class="width_100">
+<h1>IMMERSIVE BATCH FEEDBACK</h1>
+</header>
+<div class="container">
+<div>
+
+
+<div>1. How would you rate the corriculum activity of cognizant?
+<div style="width:100%; display:inline-block">
+<ul >
+<li>
+<label>5</label>&nbsp<input type="radio" name="co_act" value="5">
+</li>
+<li>
+<label>4</label>&nbsp<input type="radio" name="co_act" value="4">
+</li>
+<li>
+<label>3</label>&nbsp<input type="radio" name="co_act" value="3">
+</li>
+<li>
+<label>2</label>&nbsp<input type="radio" name="co_act" value="2">
+</li>
+<li>
+<label>1</label>&nbsp<input type="radio" name="co_act" value="1">
+</li>
+</ul>
+</div>
+
+<div>1. How would you rate the faculty of cognizant?
+<div style="width:100%; display:inline-block">
+<ul >
+<li>
+<label>5</label>&nbsp<input type="radio" name="faculty" value="5">
+</li>
+<li>
+<label>4</label>&nbsp<input type="radio" name="faculty" value="4">
+</li>
+<li>
+<label>3</label>&nbsp<input type="radio" name="faculty" value="3">
+</li>
+<li>
+<label>2</label>&nbsp<input type="radio" name="faculty" value="2">
+</li>
+<li>
+<label>1</label>&nbsp<input type="radio" name="faculty" value="1">
+</li>
+</ul>
+</div>
+
+<div>1. How would you rate the building of cognizant?
+<div style="width:100%; display:inline-block">
+<ul >
+<li>
+<label>5</label>&nbsp<input type="radio" name="building" value="5">
+</li>
+<li>
+<label>4</label>&nbsp<input type="radio" name="building" value="4">
+</li>
+<li>
+<label>3</label>&nbsp<input type="radio" name="building" value="3">
+</li>
+<li>
+<label>2</label>&nbsp<input type="radio" name="building" value="2">
+</li>
+<li>
+<label>1</label>&nbsp<input type="radio" name="building" value="1">
+</li>
+</ul>
+</div>
+
+<div>
+<span>
+COMMENTS
+</span>
+<input type="text" pattern="[0-9a-zA-Z]+" id="comment" class="width_100 container">
+</div>
+
+<div>
+<br>
+<input type="submit"  id="button_act">
+</div>
+
+</div>
+</div>
+
+<div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Percentage of feedback given.</h4>
+        </div>
+        <div class="modal-body">
+          <p id="body"></p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+
+</body>
+</html>
